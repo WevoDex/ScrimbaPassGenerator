@@ -20,23 +20,13 @@ function clicktocopy() {
         randomKey.onclick = function () {
             navigator.clipboard.writeText(randomKey.textContent)
             alert("Password Coppied: " + randomKey.textContent);
-            checkRandom()
         };
     }
     function checkRandomPass() {
         randomPass.onclick = function () {
             navigator.clipboard.writeText(randomPass.textContent)
             alert("Password Coppied: " + randomPass.textContent)
-            checkRandomPass()
         };
-    }
-
-    if (checkRandom()) {
-        navigator.clipboard.writeText(randomKey.textContent)
-        alert("Password Coppied: " + randomKey.textContent);
-    } else if (checkRandomPass()) {
-        navigator.clipboard.writeText(randomPass.textContent)
-        alert("Password Coppied: " + randomPass.textContent)
     }
 }
 clicktocopy()
