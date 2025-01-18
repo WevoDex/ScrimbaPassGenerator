@@ -16,17 +16,20 @@ function randomGen() {
 randomGen()
 
 function clicktocopy() {
-    function checkRandom() {
-        randomKey.onclick = function () {
-            navigator.clipboard.writeText(randomKey.textContent)
-            alert("Password Coppied: " + randomKey.textContent);
-        };
-    }
-    function checkRandomPass() {
-        randomPass.onclick = function () {
-            navigator.clipboard.writeText(randomPass.textContent)
-            alert("Password Coppied: " + randomPass.textContent)
-        };
-    }
+
+        if(randomKey.textContent){
+            randomKey.onclick = function () {
+                navigator.clipboard.writeText(randomKey.textContent)
+                alert("Password Coppied: " + randomKey.textContent);
+            };
+        }else {
+            console.log("shark")
+        }
+        if(randomPass.textContent){
+            randomPass.onclick = function () {
+                navigator.clipboard.writeText(randomPass.textContent)
+                alert("Password Coppied: " + randomPass.textContent)
+            };
+        }
 }
 clicktocopy()
