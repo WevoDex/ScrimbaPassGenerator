@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Karla";
-  src: url(/assets/fonts/Karla-ExtraBold.ttf);
+  src: url(./assets/fonts/Karla-ExtraBold.ttf);
 }
 
 @font-face {
   font-family: "Inter";
-  src: url(/assets/fonts/Inter_28pt-Regular.ttf);
+  src: url(./assets/fonts/Inter_28pt-Regular.ttf);
 }
 * {
   margin: 0;
